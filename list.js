@@ -46,7 +46,7 @@ let cards= document.getElementById("cards");
 for(let i=0;i<list.length;i++){
     cards.innerHTML+=`<div class="card">
     <a href="" class="link1">
-        <img src="movies/${i+1}.jpg" alt="">
+        <img src="${i+1}.jpg" alt="">
     <h2 class="title">${list[i].title}</h2>
     </a>
     <a href="${list[i].download}" class="button"><button>Download</button></a>
