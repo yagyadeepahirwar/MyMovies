@@ -1,0 +1,182 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    --fblack--:rgb(56, 56, 56);
+    --fgreen--:rgba(2, 192, 62, 0.825);
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 20px;
+    box-shadow:1px 2px 6px 0px grey;
+}
+.heading{
+    color: var(--fblack--);
+    font-size: 2rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.color{
+    color: var(--fgreen--);
+    font-family:fantasy;
+}
+.mainmenu{
+    flex: 0.3;
+}
+.list{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.item{
+    margin-right: 5px;
+    list-style: none;
+    font-size: 1.2rem;
+}
+
+.item .link{
+    display: block;
+   text-decoration: none;
+   padding: 0.5rem 1.5rem;
+   background-color: var(--fgreen--);
+   color: white;
+   text-transform: capitalize;
+  border-radius: 5px;
+  outline: none;
+  border:none;
+  cursor: pointer;
+  box-shadow:inset 0px -2px 10px 0px green;
+  font-family: system-ui;
+  font-weight: 600;
+}
+
+.link:hover{
+   background-color: rgba(2, 192, 62, 0.825);
+   box-shadow: none;
+}
+.link:focus{
+    background-color: var(--fblack--);
+}
+
+select{
+    border: 1px solid white;
+}
+
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(bg1.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+}
+.mainheading{
+    font-size: 3rem;
+   font-family: system-ui;
+   font-weight: 800;
+   color: var(--fgreen--);
+   text-shadow: 2px 1px 3px rgb(75, 74, 74);
+   margin-bottom: 10px;
+}
+.pera{
+    text-align: center;
+    font-weight: 500;
+   margin-bottom: 10px;
+}
+
+#search{
+    font-size: 1rem;
+    padding: 0.3rem 1rem;
+    width: 60%;
+    outline-color: var(--fgreen--)
+}
+
+.inputdiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 60%;
+}
+.label{
+    border: 1px solid rgb(56, 55, 55);
+    background-color: rgb(248, 248, 248);
+    height: inherit;
+    width: 30px;
+    padding: 2px 2px;
+    cursor: pointer;
+}
+
+.cetegary{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    margin: 20px 0px;
+}
+.cards{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.card{
+    font-family: system-ui;
+    width: 15rem;
+    height: 30rem;
+    margin:80px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.color1{
+    color: rgb(0, 134, 202);
+    border-bottom: 2px solid rgb(0, 134, 202);
+}
+.cheading{
+    font-size: 2rem;
+    font-family: system-ui;
+    color: var(--fblack--);
+    border-bottom: 2px solid var(--fblack--);
+    margin: 10px 0px;
+}
+.title{
+    text-align: center;
+    color: var(--fblack--);
+    font-size: 1.1rem;
+}
+.link1{
+    text-decoration: none;
+}
+.link1 img{
+    width: 100%;
+}
+
+.button button{
+    font-size: 1rem;
+    font-weight: 400;
+    background-color: var(--fblack--);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 20px;
+}
